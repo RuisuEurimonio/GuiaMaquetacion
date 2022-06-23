@@ -1,0 +1,28 @@
+.footer{
+    background-color: var(--cl-background-2);
+}
+
+.footer__list{
+    padding: 1.5rem 0;
+    margin-bottom: 0;
+}
+
+.footer__item{
+    margin-bottom: 1rem;
+}
+
+.footer__text{
+    height: 1.7rem;
+    background-color: var(--cl-text);
+}
+
+.footer__text:nth-child(5){
+    width: 80%;
+    margin: auto;
+}
+
+/* Ninth Ninth Ninth Ninth Ninth Ninth Ninth Ninth Ninth Ninth  */
+
+.footer__text--alternative{
+    background-color: var(--cl-orange);
+}
