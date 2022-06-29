@@ -1,15 +1,24 @@
 var content = document.getElementById("navegation--js");
 var page = document.head.baseURI;
-var expresionLocal = 'https://ruisueurimonio.github.io/GuiaMaquetacion/';
-var expresionServer = 'index.html'; 
+//Para git pages
+var expresionServer = 'https://ruisueurimonio.github.io/GuiaMaquetacion/';
+var validationLocationServer = page == expresionServer;
+var expresionServerIndex = 'https://ruisueurimonio.github.io/GuiaMaquetacion/index.html';
+var validationServerIndex = page == expresionServerIndex;
+
+//Para local 'localhost'
+var expresionLocal = 'file:///C:/Users/APRENDIZ/Documents/Luis%20Linares/index.html'; 
+var validationLocationLocal = page == expresionLocal;
+
+//Para live server
 var expresionLive = 'http://localhost:5500/';
+var validationLocationLive = page == expresionLive;
 var expresionLiveIndex = 'http://localhost:5500/index.html';
+var validationLocationLiveIndex = page == expresionLiveIndex;
+
+//Inicializo variables para almacenar los datos.
 var url = "";
 var urlIndex = "";
-var validationLocationLocal = page == expresionLocal;
-var validationLocationServer = page == expresionServer;
-var validationLocationLive = page == expresionLive;
-var validationLocationLiveIndex = page == expresionLiveIndex;
 
 if(validationLocationLocal || validationLocationServer || validationLocationLive || validationLocationLiveIndex){
     url= "./pages/";
