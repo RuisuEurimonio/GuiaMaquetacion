@@ -20,7 +20,7 @@ var validationLocationLiveIndex = page == expresionLiveIndex;
 var url = "";
 var urlIndex = "";
 
-if(validationLocationLocal || validationLocationServer || validationLocationLive || validationLocationLiveIndex){
+if(validationLocationServer || validationServerIndex || validationLocationLocal || validationLocationLive || validationLocationLiveIndex){
     url= "./pages/";
 } else {
     url= "./";
